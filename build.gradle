@@ -20,6 +20,7 @@ allprojects {
         maven { url "https://jitpack.io" }
     }
 }
+
 dependencies {
-    implementation 'com.github.tg-monitor:backend:585edff1adfdd33304ee9237fdefc7cd0f45302a'
+    implementation 'com.github.tg-monitor:backend:master-SNAPSHOT'
 }
