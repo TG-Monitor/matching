@@ -21,6 +21,10 @@ allprojects {
     }
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
     implementation 'com.github.tg-monitor:backend:master-SNAPSHOT'
 }

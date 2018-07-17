@@ -24,7 +24,7 @@ public class PatternMatcherImpl implements PatternMatcher {
     public void newMessage(TelegramMessage msg) {
         Set<String> matches = new HashSet<>();
         for (String p : patternsLocator.getService().getPatterns()) {
-            if (msg.getText().contains(p)) matches.add(p);
+            if (msg.getText().toLowerCase().contains(p.toLowerCase())) matches.add(p);
         }
         if (matches.size() > 0) {
             interactorLocator.getService().matchFound(new PatternMatch(msg, matches));
