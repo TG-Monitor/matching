@@ -53,6 +53,9 @@ public class PatternMatcherImpl implements PatternMatcher {
      * "it is"    "So it is like that?"    yes
      * "it is"    "Hit island"             no
      *
+     * Currently, a counting of how many times a given pattern matches the
+     * string is NOT implemented.
+     *
      * @return The subset of 'patterns' that matches the string.
      */
     Set<String> match(String str, Set<String> patterns) {
